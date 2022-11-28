@@ -1,13 +1,121 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0px;
+}
+
+.filtersection{
+    max-width: 350px;
+    width: 100%;
+}
+.productlist{
+    max-width: 1600px;
+    width: 100%;
+}
+
+.cart {
+    max-width: 300px;
+    width: 100%;
+}
+
+.cart img{
+    max-width: 300px;
+    height: 300px;
+    width: 100%;
+}
+
+.productcart {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.data span {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 0px 50px;
+    padding-top: 50px;
+}
+
+.cart a {
+    text-decoration: none;
+}
+
+.data span h3{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #000;
+}
+.sort {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.sort p{
+color: #000;
+font-size: 20px;
+
+}
+.filterapply form input,
+.sort select{
+    padding: 12px;
+    border: 2px solid #c4c4c4;
+    font-size: 20px;
+    color: #000;
+    outline: none;
+    border-radius: 20px;
+    appearance: none;
+}
+
+.sort select{
+    width: 150px;
+    background-image: url(../public/stroke.png);
+    background-repeat: no-repeat;
+    background-position: 90% center;    
+}
+.filtersbycatgory {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.filtersbycatgory{
+    padding: 16px;
+}
+.filtersbycatgory h3{
+    font-size: 35px;
+    color: #000;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+
+}
+
+.filtersbycatgory button{
+    text-align: left;
+    width: 200px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: none; 
+    cursor: pointer;
+}
+
+.filtersbycatgory button.active{
+    color: red;
+}
+
+.mainloading {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
